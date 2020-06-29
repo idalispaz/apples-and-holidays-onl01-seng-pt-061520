@@ -24,7 +24,8 @@ end
 def add_supply_to_winter_holidays(holiday_hash, supply)
   # holiday_hash is identical to the one above
   # add the second argument, which is a supply, to BOTH the
-  # Christmas AND the New Year's arrays
+  # Christmas AND the New Year's array
+  holiday_hash.each do 
 end
 
 
@@ -39,7 +40,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
    holiday_hash[season][holiday_name] = supply_array
   holiday_hash
-
 end
 
 def all_winter_holiday_supplies(holiday_hash)
